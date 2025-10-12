@@ -1880,3 +1880,54 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 9999; /* VERY high to appear above everything */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8); /* dark overlay */
+  display: flex; /* center content */
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto; /* scroll if content is too tall */
+}
+
+.modal-content {
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  padding: 25px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  text-align: center;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-img {
+  width: 150px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal-description {
+  font-size: 16px;
+  line-height: 1.6;
+}
