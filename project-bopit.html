@@ -1,244 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head></head>
-                <head>
-                  <meta charset="UTF-8" />
-                  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                  <title>Mario-Kart Themed Bop-It - Project</title>
-
-                  <!-- favicon -->
-                  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
-
-                  <!-- custom css link -->
-                  <link rel="stylesheet" href="./assets/css/style.css" />
-
-                  <!-- google font link -->
-                  <link rel="preconnect" href="https://fonts.googleapis.com" />
-                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-                </head>
-
-                <body>
-
-                  <main>
-
-                    <!-- SIDEBAR (same as index) -->
-                    <aside class="sidebar" data-sidebar>
-
-                      <div class="sidebar-info">
-
-                        <figure class="avatar-box">
-                          <img src="./assets/images/karthik.png" alt="Karthik Raja" width="80">
-                        </figure>
-
-                        <div class="info-content">
-                          <h1 class="name" title="Karthik Raja">Karthik Raja</h1>
-
-                          <p class="title">Computer Engineer Student<br> at University of Pittsburgh</p>
-                        </div>
-
-                        <button class="info_more-btn" data-sidebar-btn>
-                          <span>Show Contacts</span>
-
-                          <ion-icon name="chevron-down"></ion-icon>
-                        </button>
-
-                      </div>
-
-                      <div class="sidebar-info_more">
-
-                        <div class="separator"></div>
-
-                        <ul class="contacts-list">
-
-                          <li class="contact-item">
-
-                            <div class="icon-box">
-                              <ion-icon name="mail-outline"></ion-icon>
-                            </div>
-
-                            <div class="contact-info">
-                              <p class="contact-title">Email</p>
-
-                              <a href="mailto:krmumbai@gmail.com" class="contact-link">krmumbai@gmail.com</a>
-                            </div>
-
-                          </li>
-
-                          <li class="contact-item">
-
-                            <div class="icon-box">
-                              <ion-icon name="phone-portrait-outline"></ion-icon>
-                            </div>
-
-                            <div class="contact-info">
-                              <p class="contact-title">Phone</p>
-
-                              <a href="tel:+12133522795" class="contact-link">+1 (412) 499-1080</a>
-                            </div>
-
-                          </li>
-
-                          <li class="contact-item">
-
-                            <div class="icon-box">
-                              <ion-icon name="calendar-outline"></ion-icon>
-                            </div>
-
-                            <div class="contact-info">
-                              <p class="contact-title">Birthday</p>
-
-                              <time datetime="2004-08-09">August 09, 2004</time>
-                            </div>
-
-                          </li>
-
-                          <li class="contact-item">
-
-                            <div class="icon-box">
-                              <ion-icon name="location-outline"></ion-icon>
-                            </div>
-
-                            <div class="contact-info">
-                              <p class="contact-title">Location</p>
-
-                              <address>Pittsburgh, Pennsylvania, USA</address>
-                            </div>
-
-                          </li>
-
-                        </ul>
-
-                        <div class="separator"></div>
-
-                        <ul class="social-list">
-
-                          <li class="social-item">
-                            <a href="https://www.linkedin.com/in/karthik-raja-934bab278/" class="social-link">
-                              <ion-icon name="logo-linkedin"></ion-icon>
-                            </a>
-                          </li>
-
-                          <li class="social-item">
-                            <a href="https://github.com/karthik-0413" class="social-link">
-                              <ion-icon name="logo-github"></ion-icon>
-                            </a>
-                          </li>
-
-                        </ul>
-
-                      </div>
-
-                    </aside>
-
-                    <!-- MAIN CONTENT (same theme & structure) -->
-                    <div class="main-content">
-
-                      <!-- NAVBAR -->
-                      <nav class="navbar">
-
-                        <ul class="navbar-list">
-
-                          <li class="navbar-item">
-                            <button class="navbar-link" data-nav-link>About</button>
-                          </li>
-
-                          <li class="navbar-item">
-                            <button class="navbar-link" data-nav-link>Resume</button>
-                          </li>
-
-                          <li class="navbar-item">
-                            <button class="navbar-link active" data-nav-link>Portfolio</button>
-                          </li>
-
-                          <li class="navbar-item">
-                            <button class="navbar-link" data-nav-link>Beyond Engineering</button>
-                          </li>
-
-                          <li class="navbar-item">
-                            <button class="navbar-link" data-nav-link>Contact</button>
-                          </li>
-
-                        </ul>
-
-                      </nav>
-
-                      <!-- Project detail article -->
-                      <article class="portfolio  active" data-page="portfolio">
-
-                        <header>
-                          <h2 class="h2 article-title" style="padding-top: 60px;">Project — Mario-Kart Themed Bop-It</h2>
-                        </header>
-
-                        <section class="projects">
-
-                          <div class="project-detail content-card">
-
-                            <div class="project-header" style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
-                              <div style="display:flex; align-items:center; gap:1rem;">
-                                <figure class="project-img" style="margin:0;">
-                                  <img src="./assets/images/mario bop it.png" alt="Mario-Kart Themed Bop-It" loading="lazy" style="width:140px; height:auto;">
-                                </figure>
-                                <div>
-                                  <h3 class="project-title">Mario-Kart Themed Bop-It</h3>
-                                  <p class="project-category">Embedded Systems</p>
-                                </div>
-                              </div>
-
-                              <!-- Back button to index -->
-                              <div>
-                                <a href="index.html#portfolio" class="project-back-btn" style="text-decoration:none;">
-                                  <button type="button">← Back</button>
-                                </a>
-                              </div>
-
-                            </div>
-
-                            <div class="separator" style="margin:16px 0;"></div>
-
-                            <!-- Placeholder for description -->
-                            <div class="project-description" style="min-height:120px;">
-                              <!-- Replace this placeholder text with the full project description -->
-                              <p><strong>Description:</strong> <span style="color:#666;">Project description goes here. Add objectives, hardware used, software stack, challenges, outcomes, and any relevant links or images.</span></p>
-
-                              <!-- Example fields you can replace or expand -->
-                              <ul>
-                                <li><strong>Role:</strong> Lead developer / hardware integrator</li>
-                                <li><strong>Tech:</strong> STM32 / ESP32, C/C++, FreeRTOS, custom PCB, 3D-printed enclosure</li>
-                                <li><strong>Status:</strong> Completed / In progress</li>
-                              </ul>
-                            </div>
-
-                            <div class="project-gallery" style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;">
-                              <img src="./assets/images/project-1.jpg" alt="screenshot" style="width:180px; height:auto;">
-                              <img src="./assets/images/project-1.jpg" alt="screenshot" style="width:180px; height:auto;">
-                            </div>
-
-                            <div style="margin-top:16px;">
-                              <!-- Optional: link back to portfolio index (index.html) -->
-                              <a href="index.html" style="text-decoration:none;">
-                                <button type="button">Return to Portfolio</button>
-                              </a>
-                            </div>
-
-                          </div>
-
-                        </section>
-
-                      </article>
-
-                    </div>
-                  </main>
-
-                  <!-- custom js link -->
-                  <script src="./assets/js/script.js"></script>
-
-                  <!-- ionicon link -->
-                  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-                  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-                </body>
-
-                </html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mario-Kart Themed Bop-It - Project</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Optional: smooth scroll for anchor links -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- SIDEBAR (same as index) -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/karthik.png" alt="Karthik Raja" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Karthik Raja">Karthik Raja</h1>
+          <p class="title">Computer Engineer Student<br> at University of Pittsburgh</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:krmumbai@gmail.com" class="contact-link">krmumbai@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+12133522795" class="contact-link">+1 (412) 499-1080</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2004-08-09">August 09, 2004</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Pittsburgh, Pennsylvania, USA</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/karthik-raja-934bab278/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/karthik-0413" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Beyond Engineering</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+        </ul>
+      </nav>
+
+      <!-- Project detail -->
+      <article class="portfolio active" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title" style="padding-top:60px;">Project — Mario-Kart Themed Bop-It</h2>
+        </header>
+
+        <section class="projects">
+          <div class="project-detail content-card">
+            <div class="project-header" style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
+              <div style="display:flex; align-items:center; gap:1rem;">
+                <figure class="project-img" style="margin:0;">
+                  <img src="./assets/images/mario bop it.png" alt="Mario-Kart Themed Bop-It" loading="lazy" style="width:140px; height:auto;">
+                </figure>
+                <div>
+                  <h3 class="project-title">Mario-Kart Themed Bop-It</h3>
+                  <p class="project-category">Embedded Systems</p>
+                </div>
+              </div>
+
+              <!-- Back button to Portfolio section -->
+              <div>
+                <a href="index.html#portfolio" class="project-back-btn" style="text-decoration:none;">
+                  <button type="button">← Back to Portfolio</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="separator" style="margin:16px 0;"></div>
+
+            <div class="project-description" style="min-height:120px;">
+              <p><strong>Description:</strong> <span style="color:#666;">Project description goes here. Add objectives, hardware used, software stack, challenges, outcomes, and any relevant links or images.</span></p>
+              <ul>
+                <li><strong>Role:</strong> Lead developer / hardware integrator</li>
+                <li><strong>Tech:</strong> STM32 / ESP32, C/C++, FreeRTOS, custom PCB, 3D-printed enclosure</li>
+                <li><strong>Status:</strong> Completed / In progress</li>
+              </ul>
+            </div>
+
+            <div class="project-gallery" style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;">
+              <img src="./assets/images/project-1.jpg" alt="screenshot" style="width:180px; height:auto;">
+              <img src="./assets/images/project-1.jpg" alt="screenshot" style="width:180px; height:auto;">
+            </div>
+
+            <!-- Bottom back button -->
+            <div style="margin-top:16px;">
+              <a href="index.html#portfolio" style="text-decoration:none;">
+                <button type="button">Return to Portfolio</button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- ionicon scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

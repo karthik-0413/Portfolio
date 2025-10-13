@@ -1931,3 +1931,106 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-size: 16px;
   line-height: 1.6;
 }
+
+/* Added Everything Below */
+
+
+
+
+
+
+
+
+
+
+/* ===== CSS for the modal (paste into style.css) ===== */
+.project-modal {
+  display: none;                /* hidden until targeted */
+  position: fixed;
+  inset: 0;                     /* top:0; right:0; bottom:0; left:0; */
+  z-index: 9999;                /* make sure it's above everything */
+  background: rgba(0,0,0,0.65);
+  overflow-y: auto;
+  padding: 40px 16px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* show when hash matches id */
+.project-modal:target {
+  display: block;
+}
+
+/* inner box */
+.project-modal-content {
+  max-width: 960px;
+  margin: 20px auto;
+  background: #f5f5f5;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  position: relative;
+  animation: fadeInModal .25s ease;
+}
+
+/* Close X */
+.modal-close {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
+  line-height: 1;
+}
+
+/* Title */
+.project-modal-content h2 { font-size: 1.6rem; margin-bottom: 6px; }
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.project-gallery img {
+  width: 200px;           /* set desired width */
+  height: 160px;          /* set desired height */
+  object-fit: cover;      /* crop image proportionally */
+  border: 2px solid #000; /* keeps your black border */
+  border-radius: 8px;     /* smooth corners */
+  transition: transform 0.2s ease;
+}
+
+.project-gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+/* links */
+.project-links { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-bottom:16px; margin-top: 20px; /* ⬅️ adds space above the links */}
+.project-links a {
+  border:2px solid #000; padding:8px 14px; border-radius:22px; text-decoration:none; color:#000; background:#fff;
+}
+.project-links a:hover { background:#000; color:#fff; transform:scale(1.03); }
+
+/* description & skills */
+.project-description { background:#ececec; border:1px solid #000; padding:16px; border-radius:8px; }
+.project-description h3 { color:#000; margin-top:0; border-bottom:2px solid #000; display:inline-block; padding-bottom:4px; }
+.project-points { margin:12px 0; padding-left:20px; line-height:1.6; color:#000; }
+.skills-tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+.skills-tags span { background:#e6e6e6; border:1px solid #000; padding:6px 10px; border-radius:16px; color:#000; }
+/* invert colors when skill tag is hovered */
+.skills-tags span:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+
+/* small fade-in */
+@keyframes fadeInModal { from{opacity:0; transform:translateY(-6px);} to{opacity:1; transform:none;} }

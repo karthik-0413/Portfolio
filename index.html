@@ -303,8 +303,8 @@
 
         </section>
 
-
-        <!--
+        <!-- 
+      
           - testimonials
         -->
 
@@ -502,7 +502,7 @@
 
         </section>
 
-      </article>
+      </article> -->
 
 
 
@@ -536,7 +536,7 @@
               <span>2026-2027</span>
 
               <p class="timeline-text">
-                I will be pursuing a M.S. in Electrical and Computer Engineering through
+                - I will be pursuing a M.S. in Electrical and Computer Engineering through
                 Pitt's Accelerated Master's Program.
               </p>
 
@@ -549,9 +549,9 @@
               <span>2022-2026</span>
 
               <p class="timeline-text">
-                I’m currently pursuing a B.S. in Computer Engineering
-                with a Cybersecurity certificate. I enjoy combining hardware and software in my projects,
-                from embedded systems to research applications.
+                - I’m currently pursuing a B.S. in Computer Engineering with a concentration in Autonomous Systems and a
+                Cybersecurity certificate.<br>
+                - GPA: 3.716
               </p>
 
             </li>
@@ -696,7 +696,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="portfolio" id="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -715,11 +715,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Hardware Projects</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Embedded Systems</button>
+              <button data-filter-btn>Embedded/Hardware Projects</button>
             </li>
 
           </ul>
@@ -743,15 +739,11 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Software Development</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Embedded/Hardware Projects</button>
               </li>
 
             </ul>
@@ -760,54 +752,29 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <!-- Project card -->
-                <!-- Project card -->
-<div class="project-card">
-  <figure class="project-img">
-    <div class="project-item-icon-box">
-      <ion-icon name="eye-outline"></ion-icon>
-    </div>
-    <img src="./assets/images/mario bop it.png" alt="Mario-Kart Themed Bop-It" loading="lazy">
-  </figure>
-
-  <h3 class="project-title">Mario-Kart Themed Bop-It</h3>
-  <p class="project-category">Embedded Systems</p>
-
-  <button class="project-details-btn" data-modal="project1">View Details</button>
-</div>
-
-<!-- Modal -->
-<div class="modal" id="project1">
-  <div class="modal-content">
-    <span class="modal-close">&times;</span>
-    <img src="./assets/images/mario bop it.png" alt="Project Image" class="modal-img">
-    <h2 class="modal-title">Mario-Kart Themed Bop-It</h2>
-    <p class="modal-description">
-      This project is an embedded systems game with interactive controls...
-    </p>
-  </div>
-</div>
-
-
-
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="embedded/hardware projects">
+              <a href="#project-bopit-modal">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/Mario_BopIt/Main.png" alt="Mario-Kart Themed Bop-It" loading="lazy">
                 </figure>
+                <h3 class="project-title">Mario-Kart Themed Bop-It</h3>
+                <p class="project-category">Embedded/Hardware Projects</p>
+              </a>
+            </li>
 
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
+            <li class="project-item active" data-filter-item data-category="embedded/hardware projects">
+              <a href="#project-hoops-modal">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Mario_BopIt/Main.png" alt="Smart Basketball Hoop" loading="lazy">
+                </figure>
+                <h3 class="project-title">Smart Basketball Hoop</h3>
+                <p class="project-category">Embedded/Hardware Projects</p>
               </a>
             </li>
 
@@ -1201,30 +1168,127 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script>
-  const modalBtns = document.querySelectorAll('.project-details-btn');
-  modalBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const modalId = btn.getAttribute('data-modal');
-      const modal = document.getElementById(modalId);
-      modal.style.display = 'flex'; // show modal on click
-    });
-  });
 
-  const modalCloses = document.querySelectorAll('.modal-close');
-  modalCloses.forEach(span => {
-    span.addEventListener('click', () => {
-      span.parentElement.parentElement.style.display = 'none'; // hide modal
-    });
-  });
+  <!-- Full-screen modal -->
+  <!-- ===== open link (where the eye or image is) ===== -->
+  <!-- clicking this opens the modal via hash -->
+  <a href="#project-bopit-modal" class="open-project-link" aria-haspopup="dialog">
+    <!-- your figure or icon here -->
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/Mario_BopIt/Main.png" alt="Mario-Kart Themed Bop-It" loading="lazy">
+    </figure>
+  </a>
 
-  // Close modal if clicking outside content
-  window.addEventListener('click', e => {
-    if (e.target.classList.contains('modal')) {
-      e.target.style.display = 'none';
-    }
-  });
-</script>
+  <!-- ===== modal (place this near the end of <body>) ===== -->
+  <div id="project-bopit-modal" class="project-modal" role="dialog" aria-modal="true" aria-labelledby="proj-title">
+    <div class="project-modal-content">
+      <!-- Close removes hash and hides modal -->
+      <a href="#" class="modal-close" title="Close">&times;</a>
+
+      <h2 id="proj-title">Mario-Kart Themed Bop-It</h2>
+      <p class="project-category" style="color: #000;">Embedded Systems</p>
+
+      <div class="project-gallery">
+        <img src="./assets/images/Mario_BopIt/FrontView.png" alt="Bop-It image 1">
+        <img src="./assets/images/Mario_BopIt/Pedals.png" alt="Bop-It image 2">
+        <img src="./assets/images/Mario_BopIt/Shifter.png" alt="Bop-It image 3">
+        <img src="./assets/images/Mario_BopIt/Groups.png" alt="Bop-It image 4">
+      </div>
+
+      <div class="project-links">
+        <a href="https://www.youtube.com/watch?v=2GlGq63SY9I" target="_blank" rel="noopener">🎥 Watch Demo</a>
+        <a href="https://github.com/karthik-0413/ECE1895_KartIt" target="_blank" rel="noopener">💻 GitHub Repo</a>
+        <a href="./assets/docs/Delta_BopIt_Report.pdf" target="_blank" rel="noopener">📄 Project Report</a>
+      </div>
+
+      <div class="project-description">
+        <h3>Project Overview</h3>
+        <ul class="project-points">
+          <li>- Built an interactive <strong>Mario Kart-themed “Bop It”</strong> game with a steering wheel, gear shift,
+            and gas/brake pedals, where users follow on-screen instructions in real time</li>
+          <li>- Integrated physical controls with a <strong>Raspberry Pi</strong> to play Mario Kart 64 via emulator.
+          </li>
+          <li>- Engineered a <strong>custom PCB</strong> for reliable electrical connections inside a laser-cut
+            enclosure</li>
+          <li>- Designed and <strong>3D printed</strong> steering wheel, pedals, and gears, enhancing the immersive
+            physical gameplay experience.</li>
+        </ul>
+
+        <h3>Skills Used</h3>
+        <div class="skills-tags">
+          <span>PCB Design</span>
+          <span>Hardware-Software Integration</span>
+          <span>Embedded Programming</span>
+          <span>CAD Design</span>
+          <span>Sensor Integration</span>
+          <span>Microcontroller Programming</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Smart Basketball Hoop -->
+   <!-- ===== open link (where the eye or image is) ===== -->
+  <!-- clicking this opens the modal via hash -->
+  <a href="#project-hoops-modal" class="open-project-link" aria-haspopup="dialog">
+    <!-- your figure or icon here -->
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/Smart_Hoop/Main.png" alt="Smart Basketball Hoop" loading="lazy">
+    </figure>
+  </a>
+
+  <!-- ===== modal (place this near the end of <body>) ===== -->
+  <div id="project-hoops-modal" class="project-modal" role="dialog" aria-modal="true" aria-labelledby="proj-title">
+    <div class="project-modal-content">
+      <!-- Close removes hash and hides modal -->
+      <a href="#" class="modal-close" title="Close">&times;</a>
+
+      <h2 id="proj-title">Smart Basketball Hoop</h2>
+      <p class="project-category" style="color: #000;">Embedded Systems</p>
+
+      <div class="project-gallery">
+        <img src="./assets/images/Smart_Hoop/FrontView.png" alt="Smart Basketball Hoop image 1">
+        <img src="./assets/images/Smart_Hoop/Pedals.png" alt="Smart Basketball Hoop image 2">
+        <img src="./assets/images/Smart_Hoop/Shifter.png" alt="Smart Basketball Hoop image 3">
+        <img src="./assets/images/Smart_Hoop/Groups.png" alt="Smart Basketball Hoop image 4">
+      </div>
+
+      <div class="project-links">
+        <a href="https://www.youtube.com/watch?v=2GlGq63SY9I" target="_blank" rel="noopener">🎥 Watch Demo</a>
+        <a href="https://github.com/karthik-0413/ECE1895_KartIt" target="_blank" rel="noopener">💻 GitHub Repo</a>
+        <a href="./assets/docs/Delta_BopIt_Report.pdf" target="_blank" rel="noopener">📄 Project Report</a>
+      </div>
+
+      <div class="project-description">
+        <h3>Project Overview</h3>
+        <ul class="project-points">
+          <li>- Built an interactive <strong>Mario Kart-themed “Bop It”</strong> game with a steering wheel, gear shift,
+            and gas/brake pedals, where users follow on-screen instructions in real time</li>
+          <li>- Integrated physical controls with a <strong>Raspberry Pi</strong> to play Mario Kart 64 via emulator.
+          </li>
+          <li>- Engineered a <strong>custom PCB</strong> for reliable electrical connections inside a laser-cut
+            enclosure</li>
+          <li>- Designed and <strong>3D printed</strong> steering wheel, pedals, and gears, enhancing the immersive
+            physical gameplay experience.</li>
+        </ul>
+
+        <h3>Skills Used</h3>
+        <div class="skills-tags">
+          <span>PCB Design</span>
+          <span>Hardware-Software Integration</span>
+          <span>Embedded Programming</span>
+          <span>CAD Design</span>
+          <span>Sensor Integration</span>
+          <span>Microcontroller Programming</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 
 
