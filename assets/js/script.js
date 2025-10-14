@@ -75,6 +75,26 @@ for (let i = 0; i < selectItems.length; i++) {
   });
 }
 
+// custom select variables
+const select1 = document.querySelector("[data-select1]");
+const selectItems1 = document.querySelectorAll("[data-select-item1]");
+const selectValue1 = document.querySelector("[data-selecct-value1]");
+const filterBtn1 = document.querySelectorAll("[data-filter-btn1]");
+
+select1.addEventListener("click", function () { elementToggleFunc(this); });
+
+// add event in all select items
+for (let i = 0; i < selectItems1.length; i++) {
+  selectItems1[i].addEventListener("click", function () {
+
+    let selectedValue = this.innerText.toLowerCase();
+    selectValue1.innerText = this.innerText;
+    elementToggleFunc(select1);
+    filterFunc1(selectedValue);
+
+  });
+}
+
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
@@ -88,6 +108,25 @@ const filterFunc = function (selectedValue) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
+    }
+
+  }
+
+}
+
+// filter variables
+const filterItems1 = document.querySelectorAll("[data-filter-item1]");
+
+const filterFunc1 = function (selectedValue) {
+
+  for (let i = 0; i < filterItems1.length; i++) {
+
+    if (selectedValue === "all") {
+      filterItems1[i].classList.add("active");
+    } else if (selectedValue === filterItems1[i].dataset.category) {
+      filterItems1[i].classList.add("active");
+    } else {
+      filterItems1[i].classList.remove("active");
     }
 
   }
@@ -112,6 +151,26 @@ for (let i = 0; i < filterBtn.length; i++) {
   });
 
 }
+
+// add event in all filter button items for large screen
+let lastClickedBtn1 = filterBtn1[0];
+
+for (let i = 0; i < filterBtn1.length; i++) {
+
+  filterBtn1[i].addEventListener("click", function () {
+
+    let selectedValue = this.innerText.toLowerCase();
+    selectValue1.innerText = this.innerText;
+    filterFunc1(selectedValue);
+
+    lastClickedBtn1.classList.remove("active");
+    this.classList.add("active");
+    lastClickedBtn1 = this;
+
+  });
+
+}
+
 
 
 
