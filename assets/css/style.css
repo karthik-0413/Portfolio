@@ -2147,8 +2147,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .project-gallery-grid img {
-  width: 270px;
-  height: 250px;
+  width: 220px;
+  height: 170px;
   object-fit: cover; /* keeps image proportion without stretching */
   border: 2px solid #000; /* optional black border */
   border-radius: 4px; /* optional rounded corners */
