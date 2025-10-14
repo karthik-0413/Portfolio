@@ -418,7 +418,7 @@
               <p class="timeline-text">
                 - I’m currently pursuing a B.S. in Computer Engineering with a concentration in Autonomous Systems and a
                 Cybersecurity certificate.<br>
-                - GPA: 3.716
+                - GPA: 3.716<br>
                 - 5x Honors and Deans List Recipient
               </p>
 
@@ -564,7 +564,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="projects" data-page="projects" id="portfolio">
+      <article class="projects" data-page="projects" id="projects">
 
         <header>
           <h2 class="h2 article-title">Projects</h2>
@@ -603,7 +603,7 @@
             <ul class="select-list">
 
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button class="active" data-select-item>All</button>
               </li>
 
               <li class="select-item">
@@ -727,152 +727,193 @@
 
         <section class="projects">
 
+          <!-- Tabs -->
           <ul class="filter-list">
-
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active" data-filter-btn>Woodworking</button>
             </li>
-
             <li class="filter-item">
-              <button data-filter-btn>Woodworking</button>
+              <button data-filter-btn>Around the World</button>
             </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Travel</button>
-            </li>
-
             <li class="filter-item">
               <button data-filter-btn>Volunteering</button>
             </li>
-
             <li class="filter-item">
               <button data-filter-btn>Multilingual</button>
             </li>
-
           </ul>
 
           <div class="filter-select-box">
-
             <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
+              <div class="select-value" data-select-value>Select category</div>
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
-
             </button>
 
             <ul class="select-list">
-
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button class="active" data-select-item>Woodworking</button>
               </li>
-
               <li class="select-item">
-                <button data-select-item>Woodworking</button>
+                <button data-select-item>Around the World</button>
               </li>
-
               <li class="select-item">
-                <button data-select-item>Travel</button>
+                <button data-select-item>Volunteering</button>
               </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Volunteering</button>
+              <li class="select-item">
+                <button data-select-item>Multilingual</button>
               </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Multilingual</button>
-              </li>
-
             </ul>
-
           </div>
 
-          <ul class="project-list">
+          <!-- Project List -->
+          <ul>
 
-            <li class="project-item active" data-filter-item data-category="embedded/hardware projects">
-              <a href="#project-bopit-modal">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/Mario_BopIt/Main.png" alt="Mario-Kart Themed Bop-It" loading="lazy">
-                </figure>
-                <h3 class="project-title">Mario-Kart Themed Bop-It</h3>
-                <p class="project-category">Embedded/Hardware Projects</p>
-              </a>
+            <!-- Woodworking Projects (stacked, no links) -->
+            <li class="project-item active" data-filter-item data-category="woodworking">
+              <h2 class="section-title">Woodworking Projects</h2>
+              <!-- Hardwood Flooring Project -->
+              <div class="woodworking-project">
+                <h2 style="color: white; margin-bottom: 12px;">Hardwood Flooring Installation:</h2>
+
+                <!-- Flooring Images (7 images) -->
+                <div class="project-gallery-grid">
+                  <img src="./assets/images/Hardwood_Flooring/1.jpg" alt="Flooring image 1">
+                  <img src="./assets/images/Hardwood_Flooring/2.jpg" alt="Flooring image 2">
+                  <img src="./assets/images/Hardwood_Flooring/3.jpg" alt="Flooring image 3">
+                  <img src="./assets/images/Hardwood_Flooring/4.jpg" alt="Flooring image 4">
+                  <img src="./assets/images/Hardwood_Flooring/5.jpg" alt="Flooring image 5">
+                  <img src="./assets/images/Hardwood_Flooring/6.jpg" alt="Flooring image 6">
+                  <img src="./assets/images/Hardwood_Flooring/7.jpg" alt="Flooring image 7">
+                </div>
+
+                <p class="project-description">
+                  - Installed hardwood flooring in one of my rooms, including preparation, cutting, and finishing for a
+                  professional look.<br>
+                  - <em>Tools used:</em> Miter saw, nail gun, circular saw, jigsaw, mallet, chisel.
+                </p>
+              </div>
+
+              <hr style="margin: 32px 0; border-color: #ccc;">
+
+              <!-- Swing Project -->
+              <div class="woodworking-project">
+                <h2 style="color: white; margin-bottom: 12px;">Swing and Swing Frame Build:</h2>
+
+                <!-- Swing Images (10 images) -->
+                <div class="project-gallery-grid">
+                  <img src="./assets/images/Woodworking/1.jpg" alt="Swing image 1">
+                  <img src="./assets/images/Woodworking/2.jpg" alt="Swing image 2">
+                  <img src="./assets/images/Woodworking/3.jpg" alt="Swing image 3">
+                  <img src="./assets/images/Woodworking/4.jpg" alt="Swing image 4">
+                  <img src="./assets/images/Woodworking/5.jpg" alt="Swing image 5">
+                  <img src="./assets/images/Woodworking/6.jpg" alt="Swing image 6">
+                  <img src="./assets/images/Woodworking/7.jpg" alt="Swing image 7">
+                  <img src="./assets/images/Woodworking/8.jpg" alt="Swing image 8">
+                  <img src="./assets/images/Woodworking/9.jpg" alt="Swing image 9">
+                  <img src="./assets/images/Woodworking/10.jpg" alt="Swing image 10">
+                </div>
+
+                <p class="project-description">
+                  - Designed and built a custom swing along with a supporting frame, ensuring safety, durability, and
+                  aesthetic appeal.<br>
+                  - <em>Tools used:</em> Miter saw, circular saw, hand sander, drill.
+                </p>
+              </div>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="embedded/hardware projects">
-              <a href="#project-hoops-modal">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/Smart_Hoop/Main.png" alt="Smart Basketball Hoop" loading="lazy">
-                </figure>
-                <h3 class="project-title">Smart Basketball Hoop</h3>
-                <p class="project-category">Embedded/Hardware Projects</p>
-              </a>
+
+            <!-- Travel Projects -->
+            <li class="project-item" data-filter-item data-category="around the world" id="around-the-world">
+              <header>
+                <h2 class="section-title">Around the World</h2>
+                <p class="section-subtitle" style="color: white;">A collection of shot glasses from my travels</p>
+              </header>
+
+              <!-- Image Gallery -->
+              <div class="gallery">
+                <div class="gallery-item">
+                  <img src="./assets/images/Shotglass/1.jpg" alt="Shot glass from location 1">
+                </div>
+                <div class="gallery-item">
+                  <img src="./assets/images/Shotglass/3.jpg" alt="Shot glass from location 2">
+                </div>
+                <div class="gallery-item">
+                  <img src="./assets/images/Shotglass/2.jpg" alt="Shot glass from location 3">
+                </div>
+              </div>
+
+              <!-- Description -->
+              <div class="project-description" style="color: black;">
+                <h3>Collection Overview</h3>
+                <p>I enjoy collecting shot glasses from every place I travel to. What started as a small hobby has 
+                  grown into an extensive collection of shot glasses from around the world. Each piece represents a unique place I’ve 
+                  visited, capturing memories and experiences from different cultures. Over time, this collection has expanded to reflect 
+                  my travels and the stories behind each stop.</p>
+              </div>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="software development">
-              <a href="#project-train-modal">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/Train_System/Main.png" alt="Train System" loading="lazy">
-                </figure>
-                <h3 class="project-title">Train System Simulation</h3>
-                <p class="project-category">Software Development</p>
-              </a>
+            <!-- Volunteering Projects -->
+            <li class="project-item" data-filter-item data-category="volunteering">
+              <h2 class="section-title">Volunteering</h2>
+
+              <!-- Volunteer Experience 1 -->
+              <div class="volunteer-item">
+                <img src="./assets/images/temple.png" alt="SV Hindu Temple Logo" class="volunteer-logo">
+                <div class="volunteer-details">
+                  <h3>Community Volunteer</h3>
+                  <p class="volunteer-org">SV Hindu Temple</p>
+                  <p class="volunteer-date">May 2018 - Aug 2022 · 4 yrs 4 mos</p>
+                  <p class="volunteer-category">Arts and Culture</p>
+                  <ul class="volunteer-description">
+                    <li>Helped distribute alms to devotees</li>
+                    <li>Communicated Hindu history to children</li>
+                    <li>Prepared for abhisekham performed</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Volunteer Experience 2 -->
+              <div class="volunteer-item">
+                <img src="./assets/images/image.png" alt="Monroeville Public Library Logo" class="volunteer-logo">
+                <div class="volunteer-details">
+                  <h3>Children Room Volunteer</h3>
+                  <p class="volunteer-org">Monroeville Public Library</p>
+                  <p class="volunteer-date">May 2019 - Aug 2021 · 2 yrs 4 mos</p>
+                  <p class="volunteer-category">Children's Room</p>
+                  <ul class="volunteer-description">
+                    <li>Assisted in the preparation of programming supplies</li>
+                    <li>Organized the library, ensured books were in order, and cleaned the space for visitors</li>
+                  </ul>
+                </div>
+              </div>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="software development">
-              <a href="#project-client-modal">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/Client_Setup/Main.png" alt="Automated New Client Setup Process"
-                    loading="lazy">
-                </figure>
-                <h3 class="project-title">Automated New Real Estate Client Setup Process</h3>
-                <p class="project-category">Software Development</p>
-              </a>
-            </li>
+            <!-- Multilingual -->
+            <li class="project-item" data-filter-item data-category="multilingual">
+              <h2 class="section-title">Languages</h2>
 
-            <li class="project-item active" data-filter-item data-category="embedded/hardware projects">
-              <a href="#project-elevator-modal">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/Elevator_System/Main.png" alt="Smart Elevator System" loading="lazy">
-                </figure>
-                <h3 class="project-title">Embedded Elevator System</h3>
-                <p class="project-category">Embedded/Hardware Projects</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="embedded/hardware projects">
-              <a href="#project-origami-modal">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/Origami_Project/Main.png" alt="Origami Project" loading="lazy">
-                </figure>
-                <h3 class="project-title">Origami Robot (Capstone) - In Progress</h3>
-                <p class="project-category">Embedded/Hardware Projects</p>
-              </a>
+              <div class="languages-container">
+                <div class="language-item">
+                  <p class="language-name">English</p>
+                </div>
+                <div class="language-item">
+                  <p class="language-name">Tamil</p>
+                </div>
+                <div class="language-item">
+                  <p class="language-name">Hindi</p>
+                </div>
+                <div class="language-item">
+                  <p class="language-name">Malayalam</p>
+                </div>
+              </div>
             </li>
 
           </ul>
 
         </section>
+
 
       </article>
 
