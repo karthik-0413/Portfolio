@@ -647,6 +647,19 @@
             </li>
 
             <li class="project-item active" data-filter-item data-category="software development">
+              <a href="#blackjack-modal">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Blackjack/image.png" alt="BlackjackAssistant" loading="lazy">
+                </figure>
+                <h3 class="project-title">Blackjack Assistant - Computer Vision</h3>
+                <p class="project-category">Software Development</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="software development">
               <a href="#project-train-modal">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1343,6 +1356,61 @@
       </div>
     </div>
   </div>
+
+
+
+
+  <!-- Blackjack Assistant -->
+  <!-- ===== open link (where the eye or image is) ===== -->
+  <!-- clicking this opens the modal via hash -->
+
+  <!-- ===== modal (place this near the end of <body>) ===== -->
+  <div id="blackjack-modal" class="project-modal" role="dialog" aria-modal="true" aria-labelledby="proj-title">
+    <div class="project-modal-content">
+      <!-- Close removes hash and hides modal -->
+      <a href="#" class="modal-close" title="Close">&times;</a>
+
+      <h2 id="proj-title">Blackjack Computer Vision Project</h2>
+      <p class="project-category" style="color: #000;">Software Development</p>
+
+      <div class="project-gallery">
+        <img src="./assets/images/Blackjack/Picture1.png" alt="Blackjack image 1">
+        <img src="./assets/images/Blackjack/Picture2.png" alt="Elevator image 2">
+        <img src="./assets/images/Blackjack/IMG_4670 1.jpeg" alt="Elevator image 3">
+        <img src="./assets/images/Blackjack/Screenshot 2025-11-17 215105.png" alt="Elevator image 4">
+      </div>
+
+      <div class="project-links">
+        <a href="https://youtu.be/qpvQ4PkGBTw" target="_blank" rel="noopener">🎥 Watch Demo</a>
+        <a href="https://github.com/karthik-0413/blackjack-computer-vision-project" target="_blank" rel="noopener">💻 GitHub Repo</a>
+        <!-- <a href="./assets/docs/Term_Project_Report.pdf" target="_blank" rel="noopener">📄 Project Report</a> -->
+      </div>
+
+      <div class="project-description">
+        <h3>Project Overview</h3>
+        <ul class="project-points">
+          <li>- Integrated a <strong>live camera feed</strong> with <strong>OpenCV</strong> to identify card rank/suit and update the game state dynamically.</li>
+          <li>- Built a <strong>mathematical and statistical decision engine</strong> using probability, expected value, combinations, and permutations.</li>
+          <li>- Implemented a <strong>card-counting algorithm (Hi-Lo system)</strong> to estimate the likelihood of upcoming cards.</li>
+          <li>- Designed a <strong>UI</strong> that displays detected cards, recommended actions, and allows user interaction (e.g., number of players).</li>
+          <li>- Created algorithms to recommend optimal player decisions such as <strong>Hit, Stand, Double Down</strong>, and bet sizing.</li>
+          <li>- Combined <strong>computer vision</strong>, <strong>probability modeling</strong>, and hand-based decision logic to improve accuracy and gameplay assistance.</li>
+        </ul>
+
+        <h3>Skills Used</h3>
+        <div class="skills-tags">
+          <span>Computer Vision</span>
+          <span>OpenCV</span>
+          <span>Image Processing</span>
+          <span>Real-Time Systems</span>
+          <span>Python (Programming Language)</span>
+          <span>System Integration</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
 
 
 
